@@ -399,7 +399,10 @@ class ReactNativeModal extends Component {
               });
             }
           );
-          this.props.onModalHide();
+          setTimeout(()=>{
+            this.props.onModalHide();
+          },0);
+          
         }
       });
     }
